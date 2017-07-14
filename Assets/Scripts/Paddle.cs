@@ -16,7 +16,7 @@ public class Paddle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float mousePosXRatioOfScreen = Input.mousePosition.x / Screen.width;
-        float paddlePosInBlocks = (this.transform.position.x - 82) / 15 * 16;
+//        float paddlePosInBlocks = (this.transform.position.x - 82) / 15 * 16;
         // if (  )
         //Debug.Log("paddle pos = " + ( this.transform.position.x - 82) /15 * 16 );
         Vector3 paddPos = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);

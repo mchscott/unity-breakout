@@ -27,7 +27,7 @@ public class Ball : MonoBehaviour {
             launched = true;
             //this.GetComponent.velocity = new Vector2(2f, 10f);
             //this.rigidbody2D.velocity = new Vector2(2f, 10f);
-            rigi.velocity = new Vector2(3f, 14f);
+            rigi.velocity = new Vector2(2.5f, 16f);
         }
 	}
 }
