@@ -1,16 +1,19 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
-    public Paddle paddle;
+    private Paddle paddle;
     private Vector3 paddleToBallVector;
     private Rigidbody2D rigi;
     private bool launched = false;
 	// Use this for initialization
 	void Start () {
+        paddle = FindObjectOfType<Paddle>();
         rigi = GetComponent<Rigidbody2D>();
         paddleToBallVector = this.transform.position - paddle.transform.position;
+        
 	}
 	
 	// Update is called once per frame

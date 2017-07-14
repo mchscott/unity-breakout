@@ -6,9 +6,11 @@ public class Block : MonoBehaviour {
 
     public int maxHits;
     public int timesHit;
+    private LevelManager levelManager;
 	// Use this for initialization
 	void Start () {
         timesHit = 0;
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +29,12 @@ public class Block : MonoBehaviour {
         if ( timesHit>=maxHits)
         {
             Destroy(gameObject);
+            // SimulateWin();
         }
+    }
+    private void SimulateWin()
+    {
+        //SimulateWin();
+        levelManager.NextLevel();
     }
 }
